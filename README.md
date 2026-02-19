@@ -8,6 +8,12 @@ YouTubeサムネイル画像生成用のDockerコンテナ
 docker build -t mizucopo/yt-thumb:develop .
 ```
 
+## Usage
+
+```bash
+docker run --rm -v $(pwd):/work mizucopo/yt-thumb:develop convert input.png output.jpg
+```
+
 ## License
 
 - Code: MIT (see [LICENSE](LICENSE))
