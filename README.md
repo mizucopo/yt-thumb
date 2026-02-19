@@ -1,6 +1,6 @@
 # yt-thumb
 
-YouTubeサムネイル画像生成用のDockerコンテナ
+YouTubeサムネイル画像生成用のDockerイメージ
 
 ## Build
 
@@ -28,6 +28,16 @@ docker run --rm -v "$PWD":/work \
   -define jpeg:extent=2000KB \
   output.jpg
 ```
+
+## GitHub リポジトリ設定
+
+Dockerイメージの自動リリースを有効にするには、以下の設定が必要です。
+
+### Secrets
+
+| 名前 | 説明 |
+|------|------|
+| `DOCKERHUB_TOKEN` | Docker HubのAccess Token（[Docker Hub Account Settings](https://hub.docker.com/settings/security)で作成） |
 
 ## License
 
