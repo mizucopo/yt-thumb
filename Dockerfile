@@ -2,6 +2,7 @@ FROM alpine:3.23
 
 RUN apk add --no-cache \
     imagemagick \
+    libjpeg-turbo \
     fontconfig \
     ttf-dejavu \
   && fc-cache -f
