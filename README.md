@@ -25,7 +25,7 @@ docker run --rm -v "$PWD":/work \
   -fill none -stroke white -strokewidth 34 -annotate "+80+60" "#13" \
   -fill red -stroke none -annotate "+80+60" "#13" \
   -strip \
-  -quality 100 \
+  -define jpeg:extent=2000KB \
   output.jpg
 ```
 
